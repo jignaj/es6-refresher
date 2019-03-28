@@ -9,3 +9,16 @@ const jobs = [
 
 const activeJobs = jobs.filter(job => job.isActive);
 console.log(activeJobs);
+
+const person = {
+  talk() {
+    var self = this;
+    setTimeout(function() {
+      console.log("this", self);
+    }, 1000);
+  }
+};
+person.talk();
+const colors = ["red", "green", "blue"];
+const items = colors.map(c => `<li> ${c} </li>`);
+console.log(items);
